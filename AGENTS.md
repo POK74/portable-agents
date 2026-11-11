@@ -22,4 +22,4 @@ The repository starts without an established commit convention. Use short impera
 
 ## Security & Provider Configuration
 
-Keep API keys and OAuth tokens out of manifests and Git. For an open-source ChatGPT connection, follow OpenAI's official Sign in with ChatGPT flow and verify granted scopes; do not ask customers for session cookies. Keep OpenRouter and API keys in local secure storage. Require customer approval before sending email or attachments, publishing site changes, or spending money. Restrict file access to customer-selected folders, and make paired phones revocable.
+Keep API keys and OAuth tokens out of manifests and Git. Keep the agent workflow independent of the selected AI operator; follow `docs/provider-contract.md`. For an open-source ChatGPT connection, use OpenAI's official sign-in flow and verify granted scopes. For Claude, use an officially supported Anthropic integration. Do not ask for session cookies. Keep API keys in local secure storage. Require customer approval before sending email or attachments, publishing site changes, or spending money. Restrict file access to customer-selected folders, and make paired phones revocable.

@@ -20,6 +20,8 @@ For a request from the car to email a PC file: transcribe the request, find cand
 
 Build order: desktop host and task state; orchestrator; mobile pairing and task channel; files and email draft flow; voice input; presentations and website specialists. Add official ChatGPT sign-in and optional provider adapters behind a shared model interface.
 
+The customer selects an AI operator per account or task. The orchestrator and specialists use the same provider contract, so switching the operator does not change site permissions, approval gates, or task history. A missing or expired provider credential pauses the AI step; it never causes an automatic switch to another paid provider.
+
 ## Website agent: two site types
 
 For a simple Next.js marketing site, keep editable copy and image references in repository files. The website agent proposes a small Git change, checks the build, and gives the customer a Vercel preview. After approval, publish through the site's normal Git deployment. This avoids a separate content database or CMS for the site; the agent service still needs identity, permissions, task state, and an approval channel.
