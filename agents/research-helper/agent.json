@@ -1,0 +1,7 @@
+{
+  "id": "research-helper",
+  "name": "Research Helper",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Summarizes supplied material and marks uncertainty."
+}
