@@ -1,0 +1,7 @@
+{
+  "id": "presentations",
+  "name": "Presentations",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Creates and improves slide presentations."
+}

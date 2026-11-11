@@ -1,0 +1,7 @@
+{
+  "id": "files",
+  "name": "Files",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Finds files within customer-approved folders."
+}

@@ -2,11 +2,11 @@
 
 ## Project Structure & Module Organization
 
-This repository hosts portable agent definitions. Keep each agent in `agents/<slug>/` with an `agent.json` manifest and an `instructions.md` prompt. Put provider adapters in `src/portable_agents/` when runtime code is added; keep provider-neutral behavior in the agent files. Use `examples/` for sample configuration and `tests/` for checks. Never commit credentials, chat exports, or local session files.
+This repository is the starter for a desktop host, paired mobile client, and specialist agents. Keep each agent in `agents/<slug>/` with an `agent.json` manifest and an `instructions.md` prompt. Put host, pairing, and provider adapters in `src/portable_agents/` when runtime code is added; keep provider-neutral behavior in agent files. Use `docs/` for architecture, `examples/` for configuration, and `tests/` for checks.
 
 ## Build, Test, and Development Commands
 
-Run `python3 scripts/validate_agents.py` before committing; it checks every manifest and its referenced instructions file. Run `python3 -m unittest discover -s tests` for the validation tests. There is no compiled build or package release yet. To try an agent, copy its folder and supply credentials through your local environment or the selected provider's supported authentication flow.
+Run `python3 scripts/validate_agents.py` before committing; it checks every manifest and its referenced instructions file. Run `python3 -m unittest discover -s tests` for validation tests. There is no desktop or mobile build yet. Follow `docs/architecture.md` when adding runtime components.
 
 ## Coding Style & Naming Conventions
 
@@ -22,4 +22,4 @@ The repository starts without an established commit convention. Use short impera
 
 ## Security & Provider Configuration
 
-Store API keys in environment variables and document required names in `examples/`; never place them in manifests. OpenRouter and OpenAI API integrations need their own supported credentials. A ChatGPT subscription must not be treated as an API credential; add any ChatGPT connection only through an officially supported flow.
+Keep API keys and OAuth tokens out of manifests and Git. For an open-source ChatGPT connection, follow OpenAI's official Sign in with ChatGPT flow and verify granted scopes; do not ask customers for session cookies. Keep OpenRouter and API keys in local secure storage. Require customer approval before sending email or attachments, publishing site changes, or spending money. Restrict file access to customer-selected folders, and make paired phones revocable.

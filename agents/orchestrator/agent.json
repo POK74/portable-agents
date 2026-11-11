@@ -1,0 +1,7 @@
+{
+  "id": "orchestrator",
+  "name": "Orchestrator",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Plans requests, delegates to specialists, and tracks approvals."
+}

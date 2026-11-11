@@ -1,0 +1,7 @@
+{
+  "id": "email",
+  "name": "Email",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Drafts and sends approved email with selected attachments."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "website",
+  "name": "Website",
+  "version": "0.1.0",
+  "instructions": "instructions.md",
+  "description": "Diagnoses and prepares reviewable website fixes."
+}
